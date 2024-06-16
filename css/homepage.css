@@ -1,0 +1,193 @@
+/* Reset umum untuk margin, padding, dan box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menentukan font-family default untuk body */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styling header dengan warna latar belakang dan padding */
+header {
+    background-color: #6573f5;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* Menggunakan flexbox untuk menyelaraskan item di dalam navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styling bagian logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Menentukan ukuran dan gaya gambar logo */
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Menentukan gaya teks logo */
+.logo span {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Menghilangkan bullet points dari daftar dan menggunakan flexbox untuk menyelaraskan tautan */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Menentukan tampilan untuk item daftar */
+.nav-links li {
+    display: inline;
+}
+
+/* Styling tautan navigasi */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Menambahkan efek hover pada tautan navigasi */
+.nav-links a:hover {
+    text-decoration: underline;
+}
+/*Gaya untuk section class home*/
+section .Home{
+    text-align: center;
+    padding: 0px;
+}
+section .Home img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+
+/* Styling footer */
+footer {
+    background-color: #6573f5;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    max-width: 100%;
+}
+
+/*container untuk konten di dalam footer*/
+.footer-container {
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+address, .contact-us, .social-media-icons {
+    margin-right: 50px; /* Jarak kanan sebesar 15px */
+    margin-bottom: 15px; /* Jarak bawah untuk pemisahan vertikal */
+}
+/*bagian untuk mengedit id contact*/
+section #contact{
+    display: flex;
+    position: relative;
+}
+/*styling bagian logo di footer*/
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+/*styling gambar logo di footer*/
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+/*style untuk mengatur bagian whatsapp*/
+.whatsapp-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/*style ukuran logo contack*/
+.whatsapp-logo img{
+    width: 25px;
+    height: 25px;
+}
+/*style untuk logo email*/
+.email-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/*style ukuran ikon logo email*/
+.email-logo img{
+    width: 25px;
+}
+/*styling elemen di address dan section di footer*/
+address, section {
+    text-align: left;
+}
+/*styling heding di address dan section di footer*/
+address h3, section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+/*styling paragraf di address */
+address p, section p {
+    margin: 5px 0;
+}
+/*style ikon media sosial footer*/
+.social-media-icons {
+    display: flex;
+    gap: 20px;
+}
+/*style gambar ikon media sosial footer*/
+.social-media-icons img {
+    width: 30px;
+    height: 30px;
+}
+/* CSS (homepage.css) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Tambahkan kelas ini untuk setiap elemen yang ingin dianimasikan */
+.hidden {
+    opacity: 0; /* Pastikan elemen tersembunyi pada awalnya */
+}
