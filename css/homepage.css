@@ -9,7 +9,10 @@
 body {
     font-family: "Poppins", sans-serif;
 }
-
+.footer-logo h2{
+    color: white;
+    text-align: left;
+}
 /* Styling header dengan warna latar belakang dan padding */
 header {
     background-color: #6573f5;
@@ -20,6 +23,7 @@ header {
     position: fixed;
     z-index: 1000;
 }
+
 
 /* Menggunakan flexbox untuk menyelaraskan item di dalam navbar */
 nav {
@@ -74,15 +78,24 @@ nav {
 .nav-links a:hover {
     text-decoration: underline;
 }
-/*Gaya untuk section class home*/
-section .Home{
-    text-align: center;
-    padding: 0px;
-}
-section .Home img{
+/*style untuk mengedit image*/
+section .Home img {
     max-width: 100%;
     height: auto;
-    margin-top: 0px;
+    margin-top: 0;
+    display: block;
+}
+/*style untuk edit tulisan */
+section .Home p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Sesuaikan warna teks agar terbaca */
+    font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang dengan transparansi untuk meningkatkan keterbacaan */
+    padding: 10px; /* Jarak di sekitar teks */
+    border-radius: 5px;
 }
 
 /* Styling footer */
@@ -114,13 +127,19 @@ section #contact{
 /*styling bagian logo di footer*/
 .footer-logo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+/*styling logo di footer*/
+.footer-logo h2 {
+    color: white;
+    font-size: 40px;
 }
 /*styling gambar logo di footer*/
 .footer-logo img {
     width: 60px;
     height: 60px;
-    margin-bottom: 10px;
+    margin-right: 10px;
 }
 /*style untuk mengatur bagian whatsapp*/
 .whatsapp-logo{
