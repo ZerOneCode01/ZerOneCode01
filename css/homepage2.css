@@ -1,67 +1,77 @@
-/* Mengatur margin, padding, dan box-sizing pada semua elemen */
+/* General styling for product section */
+.product {
+    background-color: white;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    color: #6573f5;
+}
+/*style untuk tulisan h1 produk populer*/
+.product h1{
+    font-size: 30px;
+}
+/*style untuk edit bagian web commers dan study */
+.sub-product {
+    background-color: #6573f5;
+    padding: 20px 20px 50px 20px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+/*bagian untuk mengedit tulisan commers dan study*/
+.sub-product h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-/*style untuk h1*/
-h1{
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-/*style untuk h2*/
-.sub-product h2{
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-/* Mengatur tampilan elemen dengan kelas commers dan study, sebagai flexbox, dan mengatur tampilan di tengah */
-.commers, .study {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Mengatur tampilan elemen dengan kelas product-box */
+/* Styling untuk bagain product boxes */
 .product-box {
-    position: relative; /* Mengatur posisi elemen relatif */
-    margin-right: 10px; /* Memberikan jarak kanan pada elemen */
-    text-align: center; /* Mengatur tampilan teks pada elemen */
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin: 10px 10px 10px 10px;
 }
-
-/* Mengatur ukuran gambar dalam elemen product-box */
+/*bagian untuk mengatur img*/
 .product-box img {
     width: 350px;
     height: 250px;
-    transition: .3s ease; /* Mengatur efek transisi pada elemen */
+    object-fit: cover;
+    border-radius: 5px 5px 5px 5px;
 }
 
-/* Mengatur efek transisi pada gambar saat dihover */
-.product-box:hover img {
-    opacity: .7; /* Mengatur ke darkness pada gambar */
-}
-
-/* Mengatur tampilan elemen dengan kelas product-layer saat dihover */
-.product-box:hover .product-layer {
-    opacity: 1; /* Mengatur ke transparansi pada elemen */
-    visibility: visible; /* Mengatur ke tampilan elemen */
-}
-
-/* Mengatur tampilan elemen dengan kelas product-layer */
+/* Styling untuk mengatur responsif saat kursor di arahkan ke img */
 .product-layer {
-    position: absolute; /* Mengatur posisi elemen absolut */
-    top: 50%; /* Mengatur posisi vertikal pada elemen */
-    left: 50%; /* Mengatur posisi horizontal pada elemen */
-    transform: translate(-50%, -50%); /* Mengatur posisi pada elemen */
-    opacity: 0; /* Mengatur ke transparansi pada elemen */
-    visibility: hidden; /* Mengatur ke tampilan elemen */
-    transition: .3s ease; /* Mengatur efek transisi pada elemen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 5px 5px;
 }
-
-/* Mengatur tampilan elemen dalam elemen product-layer */
+/*styling bagian saat kursor di arahkan ke gambar product*/
+.product-box:hover .product-layer {
+    opacity: 1;
+}
+/*style untuk mengatur ikon tampilkan product*/
 .product-layer a {
-    text-decoration: none; /* Mengatur tampilan elemen tanpa garis bawah */
-    color: #252020; /* Mengatur warna teks pada elemen */
+    color: white;
+    font-size: 24px;
 }
 
+/* style untuk mengatur masing-masing bagian dari product */
+.product-container,
+.product-container2 {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+/*style untuk menatur posisi img dari masing-masing product*/
+.study, .commers{
+    display: flex;
+}
 
