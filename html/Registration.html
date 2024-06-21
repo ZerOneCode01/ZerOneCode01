@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerone</title>
+    <!-- Menghubungkan ke Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- Menambahkan logo pada tab browser -->
+    <link rel="icon" href="/image/logo.png" type="image/Zerone">
+    <!-- Menambahkan link ke file CSS eksternal -->
+    <link rel="stylesheet" href="/css/regist.css">
+    <!-- Menambahkan link ke ikon Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian kiri halaman -->
+        <div class="left-side">
+            <h2>Selamat Datang di ZerOne Code</h2>
+            <!-- Menampilkan gambar logo -->
+            <img src="/image/zerone.png" alt="Logo Image">
+        </div>
+        <!-- Bagian kanan halaman -->
+        <div class="right-side">
+            <div class="login-form">
+                <h3>Masuk ke ZerOne Code</h3>
+                <p>Silahkan mengisi informasi akun kamu.</p>
+                <!-- Form untuk login -->
+                <form>
+                    <div class="input-group">
+                        <label for="username">User Name</label>
+                        <!-- Input untuk username -->
+                        <input type="username" id="username" name="username" placeholder="User Name">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <!-- Input untuk email -->
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <!-- Input untuk password -->
+                        <input type="password" id="password" name="password" placeholder="Password" 
+                               pattern="^(?=.*[0-9])(?=.*[a-zA-Z]).{8,}$" 
+                               title="Password harus terdiri dari minimal 8 karakter dan mengandung setidaknya 1 angka.">
+                        <!-- 
+                        1) (?=.*[0-9]): Mengandung setidaknya satu angka.
+                        2) (?=.*[a-zA-Z]): Mengandung setidaknya satu huruf (baik huruf kecil maupun huruf besar).
+                        3) .{8,}$: Memiliki panjang minimal 8 karakter.
+                        -->
+                        <!-- Tombol untuk menampilkan password -->
+                        <span class="show-password" onclick="togglePasswordVisibility('password', this)"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm_password">Konfirmasi Password</label>
+                        <!-- Input untuk konfirmasi password -->
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Konfirmasi Password" 
+                               title="Harap masukkan password yang sama seperti di atas.">
+                        <!-- 
+                        Input ini digunakan untuk mengkonfirmasi bahwa password yang dimasukkan sama dengan password sebelumnya.
+                        -->
+                        <!-- Tombol untuk menampilkan password -->
+                        <span class="show-password" onclick="togglePasswordVisibility('confirm_password', this)"></span>
+                    </div>
+                    <!-- Pesan error untuk password yang tidak cocok -->
+                    <div id="password-error" style="color: red; display: none;">
+                        Password dan Konfirmasi Password tidak cocok.
+                    </div>
+                    <!-- Tombol untuk submit form regist -->
+                    <button type="button" class="btn regist-btn" onclick="redirectToLogin()">Daftar</button>
+                </form>
+                <!-- Tombol untuk login dengan Google -->
+                <button class="btn google-btn">Masuk Dengan Google</button>
+                <!-- Link untuk reset password -->
+                <p class="forgot-password">Lupa password? <a href="#">Reset passwordmu disini</a></p>
+                <!-- Link untuk log in akun yang sudah ada -->
+                <p>Sudah memiliki akun? <a href="LogIn.html">Silahkan Log In</a></p>
+            </div>
+        </div>
+    </div>
+    <!--animasi javascript-->
+    <script src="/js/pasword.js"></script>
+    <script src="/js/regist.js"></script>
+</body>
+</html>

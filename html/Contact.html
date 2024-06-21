@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerone</title>
+
+    <!-- Link ke Google Fonts untuk menggunakan font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icon tab browser -->
+    <link rel="icon" href="/image/logo.png" type="image/png">
+
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    
+    <!-- Link ke Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Navigasi -->
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="/image/logo.png" alt="Logo Zerone Code">
+                <span>Zerone Code</span>
+            </div>
+            <!-- Daftar tautan navigasi -->
+            <ul class="nav-links">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="LogIn.html">Login</a></li>
+                <li><a href="Registration.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section untuk latar belakang homepage -->
+    <section>
+        <div class="Home hidden">
+            <p>Jasa Pembuatan Web Site</p>
+            <img src="/image/Homepage.png" alt="Home">
+        </div>
+    </section>
+
+    <!-- Kontainer utama untuk informasi kontak dan formulir pesan -->
+    <div class="container">
+        
+        <!-- Bagian informasi kontak -->
+        <div class="contact-info">
+            <h1>Contact</h1>
+            <!-- Informasi kontak seperti nomor telepon, email, dll. -->
+            <div class="info-item">
+                <h3>Phone Number</h3>
+                <p>0822 4021 8353</p>
+            </div>
+            <div class="info-item">
+                <h3>Email address</h3>
+                <p>zanorencode@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <h3>Fax address</h3>
+                <p>0823 728 8733</p>
+            </div>
+            <div class="info-item">
+                <h3>Location</h3>
+                <p>White house, tondo</p>
+            </div>
+        </div>
+
+        <!-- Bagian formulir pesan -->
+        <div class="contact-form">
+            <h2>Send Message</h2>
+            <form>
+                <!-- Input untuk nama, email, nomor telepon, subjek, dan pesan -->
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="email" name="email" placeholder="Email address">
+                </div>
+                <div class="input-group">
+                    <input type="text" name="phone" placeholder="Phone number">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+                <div class="input-message">
+                    <textarea name="message" placeholder="Message"></textarea>
+                </div>
+                <!-- Tombol untuk mengirim pesan -->
+                <div class="btn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bagian untuk menampilkan lokasi menggunakan Google Maps -->
+    <div class="location">
+        <h2>Find Us</h2>
+        <!-- Iframe untuk menampilkan peta dari Google Maps -->
+        <iframe src="https://www.google.co.id/maps/embed?pb=!1m18!1m12!1m3!1d3981.378419820114!2d119.9004537!3d-0.8308867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d8be967bef0d28f%3A0x595f6a7b7a07338f!2sHUNTAP%20TONDO!5e0!3m2!1sen!2sid!4v1624267594954!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer-container">
+            <!-- Logo dan informasi perusahaan -->
+            <article class="footer-logo hidden">
+                <img src="/image/logo.png" alt="Zerone Code Logo">
+                <h2>Zerone Code</h2>
+            </article>
+            <!-- Informasi kontak dan media sosial -->
+            <div id="contact">
+                <address class="hidden">
+                    <h3>Address:</h3>
+                    <p>Gedung Office white house, Tondo Jln. Soekarno-Hatta 427-429, Palu, Indonesia</p>
+                </address>
+                <section class="contact-us hidden">
+                    <h3>Contact Us:</h3>
+                    <div class="whatsapp-logo">
+                        <img src="/image/whatsapp.png" alt="Whatsapp">
+                        <p>
+                            Chat Whatsapp<br>
+                            0812 3566 5935
+                        </p>
+                    </div>
+                    <div class="email-logo">
+                        <img src="/image/email.png" alt="Email"> Email<br>
+                        <p>zeronecode@gmail.com</p>
+                    </div>
+                </section>
+                <section class="hidden">
+                    <h3>Social Media:</h3>
+                    <div class="social-media-icons">
+                        <a href="#"><img src="/image/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="/image/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="/image/twitter.png" alt="Twitter"></a>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Script untuk animasi -->
+    <script src="/js/animasi.js"></script>
+</body>
+</html>
