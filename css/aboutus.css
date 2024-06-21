@@ -1,0 +1,31 @@
+/* General styling for AboutUs section */
+.AboutUs {
+    background-color: white; /* Warna latar belakang putih */
+    padding: 10px 10px 40px 10px; /* Padding: atas, kanan, bawah, kiri */
+    text-align: center; /* Teks diatur ke tengah */
+    color: #6573f5; /* Warna teks */
+    max-width: 1200px; /* Lebar maksimal */
+    max-height: 1300px; /* Tinggi maksimal */
+    margin: 0 auto; /* Pusatkan elemen di halaman */
+}
+
+/* Style untuk mengedit image visimisi */
+section .AboutUs img {
+    max-width: 100%; /* Lebar maksimal gambar adalah 100% dari elemen induknya, membuat gambar responsif */
+    height: auto; /* Tinggi gambar otomatis menyesuaikan dengan lebar untuk menjaga rasio aspek */
+    margin-top: 30px; /* Jarak atas 30px dari elemen sebelumnya, memberikan ruang antara gambar dan elemen di atasnya */
+    display: block; /* Gambar ditampilkan sebagai elemen blok, membuatnya memulai pada baris baru dan memungkinkan margin otomatis */
+}
+
+/*style untuk edit tulisan */
+section .AboutUs p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Sesuaikan warna teks agar terbaca */
+    font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang dengan transparansi untuk meningkatkan keterbacaan */
+    padding: 10px; /* Jarak di sekitar teks */
+    border-radius: 5px;
+}

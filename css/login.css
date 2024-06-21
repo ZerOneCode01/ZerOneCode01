@@ -1,0 +1,154 @@
+/* Gaya dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;  /* Pilihan font */
+    display: flex;  /* Menggunakan flexbox untuk layout */
+    justify-content: center;  /* Posisi konten ke tengah horizontal */
+    align-items: center;  /* Posisi konten ke tengah vertikal */
+    margin: 0;  /* Menghapus margin default */
+    background-color: #31A5BE;  /* Warna latar belakang */
+}
+
+/* Kontainer utama */
+.container {
+    display: flex;  /* Menggunakan flexbox */
+    width: 90%;  /* Lebar maksimal kontainer */
+    margin-top: 20px; /*Margin atas kontainer */
+    margin-bottom: 20px; /*Margin bawah kontainer */
+    max-width: 1400px;  /* Lebar maksimal kontainer */
+    background-color: #FFF8F8;  /* Warna latar belakang */
+    border-radius: 10px;  /* Sudut lengkung tepi */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  /* Bayangan */
+    overflow: hidden;  /* Mengatasi overflow konten */
+}
+
+/* Bagian kiri dari kontainer */
+.left-side {
+    border-right-style:ridge ;
+    flex:  0 0 25%;  /* Fleksibilitas 0 (tidak meregang) dan lebar 20% */ 
+    background-color: #FFF8F8;  /* Warna latar belakang */
+    display: flex;  /* Menggunakan flexbox */
+    flex-direction: column;  /* Menyusun elemen secara vertikal */
+    align-items: left;  /* Posisi konten ke tengah horizontal */
+}
+
+.left-side h2 {
+    max-width: fit-content;
+    color: #7055a6;  /* Warna teks */
+    margin: 30px 20px 0px 20px; 
+}
+
+.left-side img {
+    max-width: 50%;  /* Gambar maksimal mengikuti lebar parent */
+    height: fit-content;  /* Tinggi gambar menyesuaikan proporsi */
+    margin: auto;  /* Margin otomatis agar gambar terpusat */
+}
+
+/* Bagian kanan dari kontainer */
+.right-side {
+    flex: 1 ;  /* Memiliki fleksibilitas 1 (menyesuaikan ukuran) */
+    padding: 20px;  /* Padding internal */
+    display: flex;  /* Menggunakan flexbox */
+    flex-direction: column;  /* Menyusun elemen secara vertikal */
+    justify-content: center;  /* Posisi konten ke tengah vertikal */
+}
+
+/* Formulir login */
+.login-form {
+    max-height: fit-content;
+    max-width: 400px;  /* Lebar maksimal formulir */
+    margin: 0 auto;  /* Tengah secara horizontal */
+}
+
+.login-form h3 {
+    margin-bottom: 10px;  /* Margin bawah untuk elemen */
+    color: #333;  /* Warna teks */
+}
+
+.login-form p {
+    margin-bottom: 20px;  /* Margin bawah untuk elemen */
+    color: #666;  /* Warna teks */
+}
+
+/* Grup input */
+.input-group {
+    margin-bottom: 20px;  /* Margin bawah untuk grup input */
+    position: relative;  /* Posisi relatif untuk ikon 'show-password' */
+}
+
+.input-group label {
+    display: block;  /* Menampilkan label sebagai blok */
+    margin-bottom: 5px;  /* Margin bawah untuk label */
+    color: #333;  /* Warna teks label */
+}
+
+.input-group input {
+    width: 100%;  /* Lebar input 100% dari parent */
+    padding: 10px;  /* Padding internal */
+    border: 1px solid #ccc;  /* Garis batas dengan warna */
+    border-radius: 5px;  /* Sudut lengkung tepi */
+    box-sizing: border-box;  /* Box-sizing agar padding terhitung dalam lebar */
+}
+
+.input-group .show-password {
+    position: absolute;  /* Posisi absolut untuk ikon 'show-password' */
+    right: 10px;  /* Jarak dari tepi kanan */
+    top: 50%;  /* Posisi di tengah vertikal */
+    transform: translateY(-50%);  /* Menyesuaikan posisi vertikal */
+    cursor: pointer;  /* Kursor menunjukkan dapat di-klik */
+}
+
+/* Opsi tambahan di bawah form */
+.options {
+    display: flex;  /* Menggunakan flexbox */
+    justify-content: space-between;  /* Menyisipkan ruang antara opsi */
+    align-items: center;  /* Posisi konten ke tengah vertikal */
+    margin-bottom: 20px;  /* Margin bawah untuk elemen */
+}
+
+.options label {
+    color: #333;  /* Warna teks label */
+}
+
+.options a {
+    color: #007bff;  /* Warna teks tautan */
+    text-decoration: none;  /* Menghapus dekorasi tautan */
+}
+
+/* Tombol umum */
+.btn {
+    width: 100%;  /* Lebar tombol 100% dari parent */
+    padding: 10px;  /* Padding internal */
+    border: none;  /* Tanpa garis batas */
+    border-radius: 5px;  /* Sudut lengkung tepi */
+    cursor: pointer;  /* Kursor menunjukkan dapat di-klik */
+    margin-bottom: 10px;  /* Margin bawah untuk elemen */
+}
+
+/* Gaya tombol login */
+.login-btn {
+    background-color: #2B28EA;  /* Warna latar tombol login */
+    color: white;  /* Warna teks tombol */
+}
+
+/* Gaya tombol login dengan Google */
+.google-btn {
+    background-color: #0d0028; /* Warna latar tombol Google */
+    color: white;  /* Warna teks tombol */
+}
+
+/* Gaya tombol login dengan Facebook */
+.facebook-btn {
+    background-color: #3b5998;  /* Warna latar tombol Facebook */
+    color: white;  /* Warna teks tombol */
+}
+
+/* Lupa kata sandi */
+.forgot-password {
+    text-align: center;  /* Teks rata tengah */
+    margin-top: 20px;  /* Margin atas untuk elemen */
+}
+
+.forgot-password a {
+    color: #007bff;  /* Warna teks tautan 'Lupa kata sandi' */
+    text-decoration: none;  /* Menghapus dekorasi tautan */
+}
